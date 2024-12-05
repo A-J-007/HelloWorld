@@ -1,0 +1,196 @@
+Microsoft Windows [Version 10.0.22631.4460]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>python --version
+Python 3.13.1
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>notepad Hello.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>python Hello.py
+Hello Alivelumangavathi!
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git add README.md
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hello.py
+
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git add Hello.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hello.py
+        modified:   README.md
+
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git commit -m "Added first python program!"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Alivelu Janjirala@DESKTOP-782GUJM.(none)')
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git config --global user.email "alivelu.j1@gmail.com"
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git config --global user.name "A-J-007"
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Hello.py
+        modified:   README.md
+
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git commit -m "Added first python program!"
+[main c7885c6] Added first python program!
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 Hello.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git push
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 461 bytes | 153.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/A-J-007/HelloWorld.git
+   22c0fb7..c7885c6  main -> main
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git switch -c development
+Switched to a new branch 'development'
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch development
+nothing to commit, working tree clean
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>notepad develop.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>python develop.py
+I am in the development branch!
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch development
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        develop.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git add develop.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git commit -m "Testing the creation of new branch locall
+y and publishing the same branch into the github"
+[development c3fa5ae] Testing the creation of new branch locally and publishing the same branch into the github
+ 1 file changed, 1 insertion(+)
+ create mode 100644 develop.py
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git push -u origin development
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 396 bytes | 198.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/A-J-007/HelloWorld/pull/new/development
+remote:
+To https://github.com/A-J-007/HelloWorld.git
+ * [new branch]      development -> development
+branch 'development' set up to track 'origin/development'.
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>notepad gitcommand.txt
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch development
+Your branch is up to date with 'origin/development'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitcommand.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>git add gitcommand.txt
+
+C:\Users\Alivelu Janjirala\OneDrive\Desktop\Projects\HelloWorld>
