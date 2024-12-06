@@ -1,0 +1,5 @@
+print(4 * 2)
+print(2 * 3 - 2)
+print(32 % 8)
+print(2+3-4)
+print(32 % 5)
