@@ -1,22 +1,3 @@
-# function to get the number of days in a month
-# function to print the month
-# function to print the whole calender of the year
-def printMonth(monthNumber):
-    print("SUN\tMON\tTUE\tWED\tTHU\tFRI\tSAT\n")
-    print("----------------------------------------------------------------")
-    days = 31
-    startingDay = 1
-    dayCounter = 1
-
-    while(dayCounter <= days):
-        if(dayCounter % 7 == 0):
-            print(str(dayCounter) + "\t",end='')
-            print("\n")
-        else:
-            print(str(dayCounter) + "\t",end='')
-        dayCounter+=1
-
-
 def isLeapYear(year):
     return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
 
@@ -63,13 +44,7 @@ def findTheFirstDayOfTheMonth(day,month,year):
 
     h = (q + (13*(m+1)//5) + K + (K//4) + (J//4) - 2*J) % 7
     return ((h - 1) + 7) % 7
-    # return h
 
-# days = ['Saturday','Sunday','Monday','Tuesday','Wednesday','Thursday','Friday']
-
-# for year in range(2000,2025):
-#     h = findTheFirstDayOfTheMonth(1,1,year)
-#     print(year,' - ' , h, days[h])
 def printEmptySpace(gaps):
     if gaps > 0:
        for i in range(gaps):
